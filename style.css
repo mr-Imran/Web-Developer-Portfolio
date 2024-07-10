@@ -42,10 +42,12 @@ nav button {
     border-radius: 8px;
     opacity: 0.8;
 }
-nav button:hover{
-    background-color: #f2f2f2;
+.contactwithme:hover{
+    color: #ffffff;
+    background-color: #202020;
     transition: ease-in-out;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .banner-container {
