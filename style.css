@@ -42,6 +42,49 @@ nav button {
     border-radius: 8px;
     opacity: 0.8;
 }
+nav button:hover{
+    background-color: #f2f2f2;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+
+.background-anime-1{
+
+
+    top: -190%;
+    left: -50px;
+
+}
+.background-anime-2{
+
+
+    top: -190%;
+    left: 120px;
+
+}.background-anime-3{
+
+
+    top: -500%;
+    left: -50px;
+
+}
+
+.background-anime-1,
+.background-anime-2,
+.background-anime-3 {
+    visibility: hidden;
+    position: relative;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+}
+
+.banner-image:hover .background-anime-1,
+.banner-image:hover .background-anime-2,
+.banner-image:hover .background-anime-3 {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .banner-container {
     width: 100%;
@@ -322,6 +365,7 @@ nav button {
     background: rgba(255, 223, 0, 0.05);
     padding: 52px;
 }
+
 .js:hover{
     background: rgba(255, 223, 0, 0.1);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -365,6 +409,19 @@ nav button {
     border-radius: 16px;
     margin-bottom: 24px;
     height: 219px;
+}
+
+.reactJs-image:hover {
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .mongoDB {
@@ -492,6 +549,12 @@ nav button {
     color: rgb(13, 19, 33);
 }
 
+.cta-btn:hover{
+    background-color: #f2f2f2;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+
 .footer-section{
     border-radius: 16px;
     background: rgba(17, 17, 18, 0.03);
@@ -511,6 +574,7 @@ nav button {
     letter-spacing: 0%;
     text-align: center;
 }
+
 .footer-icon a{
     width: 36px;
     height: 36px;
