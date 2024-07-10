@@ -176,54 +176,57 @@ nav button {
     padding-left: 32px;
 }
 
-.inspiration-section{
-    max-width: 1440px;
-    display: flex;
-    justify-content: center; 
-    margin-top: 90px; 
-}
-.inspiration-section-container{
-    width: 1140px;
-    height: 775px;
-}
-.inspiration-section-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.inspiration-section-content h1{
+.inspiration h1 {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
     font-size: 32px;
     font-weight: 800;
-    line-height: 37px;
-    letter-spacing: 0%;
     text-align: center;
+    padding-bottom: 24px;
 }
-.inspiration-section-content p{
+
+.inspiration p {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
-    opacity: 0.7;
-    margin-top: 24px;
+    padding-bottom: 48px;
+    width: 852px;
 }
-.inspiration-section-content div{
+.inspiration-video{
     box-sizing: border-box;
-    border: 1px solid rgba(13, 19, 33, 0.2);
+    border: 1px solid #25282d76;
     border-radius: 16px;
-    width: 1140px;
-    height: 614px;  
+    width: 1032px;
+    height: 628px;  
     margin-top: 48px;
     padding: 32px;  
+    
 }
-.inspiration-section-content div iframe{
-    border-radius:16px;
-    width: 100%;
-    height: 100%;
+
+.inspiration iframe {
+    width: 970px;
+    height: 550px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.inspiration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 151px;
+}
+
+.inspiration-iframe {
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    padding: 32px;
 }
 
 .skill {
@@ -266,6 +269,10 @@ nav button {
     background: rgba(255, 76, 30, 0.05);
     padding: 30px;
 }
+.html:hover{
+    background: rgba(255, 76, 30, 0.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 .skill p {
     padding-bottom: 24px;
@@ -303,6 +310,10 @@ nav button {
     background: rgba(0, 76, 232, 0.05);
     padding: 38px;
 }
+.css:hover{
+    background: rgba(0, 76, 232, 0.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 .js {
     border-radius: 16px;
@@ -313,7 +324,7 @@ nav button {
 }
 .js:hover{
     background: rgba(255, 223, 0, 0.1);
-    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .next-target h1 {
